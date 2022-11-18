@@ -14,24 +14,24 @@ LIGHT='\033[0;37m'
 #Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/budijoi/sshws/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
+echo -e "${NC}${GREEN}Izin Diterima...${NC}"
 else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
+echo -e "${NC}${RED}Izin Ditolak!${NC}";
+echo -e "${NC}${LIGHT}Hubungi Admin!"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mochvpn"
 exit 0
 fi
 sleep 1
 clear
 cd /root/
 apt install jq curl -y
-DOMAIN=lizinstaller.my.id
+DOMAIN=mangagus.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.lizinstaller.my.id
-CF_ID=missqueen300400@gmail.com
-CF_KEY=none
+SUB_DOMAIN=${sub}.mangagus.my.id
+CF_ID=budijoi@gmail.com
+CF_KEY=f4fba2ca29274b09edb845f152b9928f6f316
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
