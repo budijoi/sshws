@@ -20,37 +20,37 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/lizsvr/cfnfree/main/ssh"
+akbarvpn="raw.githubusercontent.com/budijoi/sshws/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/lizsvr/cfnfree/main/sstp"
+akbarvpnn="raw.githubusercontent.com/budijoi/sshws/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/budijoi/sshws/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/budijoi/sshws/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/budijoi/sshws/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/ohp"
 # link Hosting update
-akbarvpnnnnnnnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/update"
+akbarvpnnnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/update"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/cfnfree/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/budijoi/sshws/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/mochvpn"
 exit 0
 fi
 clear
@@ -148,7 +148,7 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "---------------------- Script Mod By LIZ ----------------------" | tee -a log-install.txt
+echo "---------------------- Script Mod By MOCHVPN ----------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
