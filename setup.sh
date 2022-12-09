@@ -40,7 +40,7 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/websocket"
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/ohp"
 # link Hosting update
 akbarvpnnnnnnnnnnn="raw.githubusercontent.com/budijoi/sshws/main/update"
-
+# Cek Izin
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$(curl https://raw.githubusercontent.com/budijoi/sshws/main/ipvps.txt | grep $MYIP | awk '{print $3}')
